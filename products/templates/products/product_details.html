@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+        <h1>Details for product</h1>
+        <br><br><br>
+        <h1> {{ product.name }}</h1>
+        <h2> {{ product.price }}</h2>
+        <img src="{{ product.image_url }}" width="400" height="600">
+ {% endblock %}
