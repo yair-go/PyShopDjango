@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Create a new product </h1>
+
+    {{ error }}
+
+    <form class="" METHOD="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="new_product_button">New Product</button>
+    </form>
+
+
+ {% endblock %}
