@@ -4,10 +4,11 @@
 
 2. Run Development web server
 	* open Terminal 
-	* run command - python manage.py runserver
+	* run command - 
+	``` python manage.py runserver```
 
 3. Add new package  'products'
-	* run command - python manage.py startapp products
+	* run command - ```python manage.py startapp products```
 
 4. Create first simple Hello World view
 	 * on file views.py:
@@ -22,7 +23,7 @@
 
  5. URL Mapping
 	* add 'urls.py' to package
-	* create mappin to viees module
+	* create mapping to views module
 ```
 from django.urls import path  
 from . import views  
@@ -61,13 +62,13 @@ urlpatterns = [
 		    ...
 		    ...
 		         'products.apps.ProductsConfig', 
-		     ]
-	* run command  - python manage.py makemigrations
-	* run command  - python manage.py migrate
+		     ]```
+	* run command  -``` python manage.py makemigrations```
+	* run command  - ```python manage.py migrate```
 
 8. use Admin panel
 	* create superuser:
-		* run command - python manage.py createsuperuser
+		* run command - ```python manage.py createsuperuser```
 	* register models in admin.py
 	```
 	from django.contrib import admin  
