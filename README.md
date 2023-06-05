@@ -104,7 +104,7 @@ urlpatterns = [
 	```
 	* create template index.html in templates folder 
 	 ```
-	 	<!--templates/index.html-->
+	 <!--templates/index.html-->
 		<h1>Products</h1>  
 		<ul>  
 		  {% for product in products %}  
