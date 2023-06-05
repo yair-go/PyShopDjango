@@ -5,10 +5,15 @@
 2. Run Development web server
 	* open Terminal 
 	* run command - 
-	``` python manage.py runserver```
+	``` 
+	python manage.py runserver
+	```
 
 3. Add new package  'products'
-	* run command - ```python manage.py startapp products```
+	* run command -
+	```
+	python manage.py startapp products
+	```
 
 4. Create first simple Hello World view
 	 * on file views.py:
@@ -68,7 +73,10 @@ urlpatterns = [
 
 8. use Admin panel
 	* create superuser:
-		* run command - ```python manage.py createsuperuser```
+		* run command - 
+		```
+		python manage.py createsuperuser
+		```
 	* register models in admin.py
 	```
 	from django.contrib import admin  
@@ -94,8 +102,9 @@ urlpatterns = [
 		    return render(request, 'index.html',  
 				  {'products': products})			  	
 	```
-	* create template index.html in template folder 
+	* create template index.html in templates folder 
 	 ```
+	 	<!--templates/index.html-->
 		<h1>Products</h1>  
 		<ul>  
 		  {% for product in products %}  
