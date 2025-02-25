@@ -121,3 +121,5 @@ urlpatterns = [
 	* define the block content
 
 11. Rendering Cards
+12. Dynamic views
+    https://youtu.be/DFPKpLxpIAM?t=2418
